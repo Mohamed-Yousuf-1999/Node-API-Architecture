@@ -13,7 +13,7 @@ exports.getUserById = async (id) => {
   return await User.findById(id);
 };
 
-exports.updateUser = async (id) => {
+exports.updateUser = async (id, userData) => {
   return await User.findByIdAndUpdate(id, userData, { new: true });
 };
 
